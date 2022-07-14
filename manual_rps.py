@@ -7,8 +7,8 @@ def get_computer_choice():
 
 def get_user_choice():
     while True:
-        userchoice = input("Enter your choice: ")
-        if userchoice.lower() in ('rock','paper','scissors'):
+        userchoice = input("Enter your choice: ").lower()
+        if userchoice in ('rock','paper','scissors'):
             return userchoice
 
 def get_winner(computer_choice, user_choice):
